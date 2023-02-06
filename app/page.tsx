@@ -1,91 +1,92 @@
-import Image from 'next/image'
-import { Inter } from '@next/font/google'
-import styles from './page.module.css'
-
-const inter = Inter({ subsets: ['latin'] })
+import styles from "./page.module.css";
+import { BsTwitter, BsGithub, BsMailbox2, BsLinkedin } from "react-icons/bs";
 
 export default function Home() {
   return (
     <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+      <div className={styles.superHero}>
+        <nav className={styles.nav}>
+          <div>{/* <p className="text-7xl text-white">AT</p> */}</div>
+          <div className={styles.navIcons}>
+            <a
+              href="https://www.linkedin.com/in/annukul-thakran/"
+              className={styles.iconLink}
+              target="_blank"
+            >
+              <BsLinkedin size={40} color="grey" />
+            </a>
+            <a
+              href="https://github.com/Annukul"
+              className={styles.iconLink}
+              target="_blank"
+            >
+              <BsGithub size={40} color="grey" />
+            </a>
+            <a
+              href="https://twitter.com/thakrananukul"
+              className={styles.iconLink}
+              target="_blank"
+            >
+              <BsTwitter size={40} color="grey" />
+            </a>
+            <a
+              href="mailto: thakran9.anukul@gmail.com"
+              className={styles.iconLink}
+            >
+              <BsMailbox2 size={40} color="grey" />
+            </a>
+          </div>
+        </nav>
+        <div className={styles.hero}>
+          <div className={styles.heroChild}>
+            <div className={styles.heroTextDiv}>
+              <div>
+                <p className="text-7xl py-5 text-slate-300 tracking-wider">
+                  Hey there!
+                </p>
+                <div className={styles.heroTextDesc}>
+                  <p className="text-slate-300 leading-relaxed text-xl tracking-wide">
+                    I am <span className="text-pink-300">Annukul</span>,
+                    passionate about latest and greatest technologies whether
+                    that's the front-end or back-end. I enjoy creating sleek and
+                    responsive applications in addition to being user friendly.
+                    A versatile engineer with interests in software engineer and
+                    designing. Adaptable and self motivated learner. Interested
+                    in new web technologies, and continuous self improvement.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className={styles.heroLinks}>
+              <div className={styles.heroLinksChild}>
+                <p className="text-4xl text-slate-300 tracking-wider">Links</p>
+                <div className={styles.heroLinksChildLinkList}>
+                  <ul className="text-slate-300 text-xl">
+                    <li className="py-1 hover:text-white hover:text-2xl ease-in-out duration-200 transition-all">
+                      <a href="">Blog</a>
+                    </li>
+                    <li className="py-1 hover:text-white hover:text-2xl ease-in-out duration-200 transition-all">
+                      <a href="">Projects</a>
+                    </li>
+                    <li className="py-1 hover:text-white hover:text-2xl ease-in-out duration-200 transition-all">
+                      <a href="">Experience</a>
+                    </li>
+                    <li className="py-1 hover:text-white hover:text-2xl ease-in-out duration-200 transition-all">
+                      <a href="">Life</a>
+                    </li>
+                    <li className="py-1 hover:text-white hover:text-2xl ease-in-out duration-200 transition-all">
+                      <a href="">Skills</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className={styles.footer}>
+            <p className="textlg text-white">©2023 annukul</p>
+          </div>
         </div>
-      </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-        <div className={styles.thirteen}>
-          <Image src="/thirteen.svg" alt="13" width={40} height={31} priority />
-        </div>
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://beta.nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
       </div>
     </main>
-  )
+  );
 }
