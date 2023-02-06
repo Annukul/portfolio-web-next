@@ -1,5 +1,6 @@
 import styles from "./page.module.css";
 import { BsTwitter, BsGithub, BsMailbox2, BsLinkedin } from "react-icons/bs";
+import { SiHashnode } from "react-icons/si";
 
 export default function Home() {
   return (
@@ -8,6 +9,13 @@ export default function Home() {
         <nav className={styles.nav}>
           <div>{/* <p className="text-7xl text-white">AT</p> */}</div>
           <div className={styles.navIcons}>
+            <a
+              href="https://annukul.hashnode.dev/"
+              className={styles.iconLink}
+              target="_blank"
+            >
+              <SiHashnode size={40} color="grey" />
+            </a>
             <a
               href="https://www.linkedin.com/in/annukul-thakran/"
               className={styles.iconLink}
