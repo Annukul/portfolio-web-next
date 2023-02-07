@@ -71,7 +71,7 @@ export default function Home() {
                 <div className={styles.heroLinksChildLinkList}>
                   <ul className="text-slate-300 text-xl">
                     <li className="py-1 hover:text-white hover:text-2xl ease-in-out duration-200 transition-all">
-                      <a href="">Blog</a>
+                      <a href="/blog">Blog</a>
                     </li>
                     <li className="py-1 hover:text-white hover:text-2xl ease-in-out duration-200 transition-all">
                       <a href="">Projects</a>
