@@ -1,16 +1,29 @@
+"use client";
+
 import { SiHashnode } from "react-icons/si";
 import styles from "./blog.module.css";
 import { BsGithub, BsLinkedin, BsMailbox2, BsTwitter } from "react-icons/bs";
+import { useRouter } from "next/navigation";
 
 export default function Blog() {
+  const router = useRouter();
   return (
     <div className={styles.main}>
       <nav className={styles.nav}>
-        <div>
-          <p className="text-4xl text-white">Blog</p>{" "}
+        <div className="flex justify-between items-center w-80">
+          <p className="text-4xl text-white">Blog</p>
+          <button
+            className="h-10 border px-4 rounded hover:bg-red-50 transition duration-200"
+            onClick={() => {
+              router.push("/login");
+            }}
+          >
+            Create your own blog
+          </button>
         </div>
         <div className={styles.navIcons}>
           <a
+            rel="noreferrer"
             href="https://annukul.hashnode.dev/"
             className={styles.iconLink}
             target="_blank"
@@ -18,6 +31,7 @@ export default function Blog() {
             <SiHashnode size={40} color="white" />
           </a>
           <a
+            rel="noreferrer"
             href="https://www.linkedin.com/in/annukul-thakran/"
             className={styles.iconLink}
             target="_blank"
@@ -25,6 +39,7 @@ export default function Blog() {
             <BsLinkedin size={40} color="white" />
           </a>
           <a
+            rel="noreferrer"
             href="https://github.com/Annukul"
             className={styles.iconLink}
             target="_blank"
@@ -32,6 +47,7 @@ export default function Blog() {
             <BsGithub size={40} color="white" />
           </a>
           <a
+            rel="noreferrer"
             href="https://twitter.com/thakrananukul"
             className={styles.iconLink}
             target="_blank"
