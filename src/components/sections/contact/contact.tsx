@@ -1,10 +1,10 @@
 export const Contact = () => {
   return (
-    <div className="w-full bg-white h-screen w-screen">
+    <div id="contact" className="w-full bg-white h-screen w-screen">
       <div className="w-full flex flex-col items-center justify-center h-4/5">
-        <div className="w-2/5 text-center">
-          <p className="text-5xl font-medium">Get In Touch</p>
-          <p className="text-lg">
+        <div className="w-full md:w-2/5 text-center px-2 md:p-0">
+          <p className="text-3xl md:text-5xl font-medium mb-4">Get In Touch</p>
+          <p className="text-md md:text-lg">
             Although I’m not currently looking for any new opportunities, my
             inbox is always open. Whether you have a question or just want to
             say hi, I’ll try my best to get back to you!

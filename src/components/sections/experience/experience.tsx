@@ -1,11 +1,12 @@
 export const Experience = () => {
   return (
     <div
+      id="exp"
       style={{ backgroundColor: "#0A1930" }}
-      className="w-full h-screen py-8"
+      className="w-full h-auto md:h-auto py-8"
     >
-      <div className="flex w-full h-full px-32">
-        <div className="w-3/4 ml-32 text-white">
+      <div className="flex w-full h-full p-0 md:px-32">
+        <div className="w-full md:w-3/4 m-0 ml:ml-32 text-white px-8 md:p-0">
           <p style={{ color: "#00FFEF" }} className="text-2xl font-bold">
             Experience.
           </p>
@@ -17,7 +18,7 @@ export const Experience = () => {
               </p>
               <div>
                 <div className="border mt-2"></div>
-                <ul className="list-disc mt-4">
+                <ul className="list-disc mt-4 text-md">
                   <li>
                     <p>
                       Re-wrote the entire B2C platform for the unicorn startup

@@ -2,14 +2,14 @@ import Image from "next/image";
 
 export const AboutMe = () => {
   return (
-    <div className="w-full h-screen bg-white py-8">
-      <div className="flex w-full h-full px-32">
-        <div className="w-2/4">
+    <div id="about-me" className="w-full h-auto md:h-auto bg-white py-8">
+      <div className="flex flex-col md:flex-row w-full h-full p-0 md:px-32">
+        <div className="w-full md:w-2/4 px-4 md:p-0">
           <p style={{ color: "#00FFEF" }} className="text-2xl font-bold">
             About Me.
           </p>
           <div className="border mt-2"></div>
-          <div className="text-lg font-normal">
+          <div className="text-md md:text-lg font-normal">
             <p className="mt-2">
               Hello! My name is Annukul and I enjoy creating things that create
               an impact on life of people. My interest in programming started
@@ -55,27 +55,30 @@ export const AboutMe = () => {
                   <span className="font-bold">4. </span>Next.js
                 </li>
                 <li>
-                  <span className="font-bold">5. </span>Node.js
+                  <span className="font-bold">5. </span>React Native
                 </li>
               </ul>
               <ul>
                 <li>
-                  <span className="font-bold">6. </span>Elixir
+                  <span className="font-bold">6. </span>Node.js
                 </li>
                 <li>
-                  <span className="font-bold">7. </span>Pheonix Framework
+                  <span className="font-bold">7. </span>Elixir
                 </li>
                 <li>
-                  <span className="font-bold">8. </span>Postgres
+                  <span className="font-bold">8. </span>Pheonix Framework
+                </li>
+                <li>
+                  <span className="font-bold">9. </span>Postgres
                 </li>
               </ul>
             </div>
           </div>
         </div>
-        <div className="flex items-center justify-center w-2/4">
+        <div className="flex items-center justify-center w-full md:w-2/4 mt-4 md:m-0">
           <div
             style={{ borderColor: "#00FFEF" }}
-            className="flex items-center justify-center border-4 w-80 p-4 rotate-12"
+            className="flex items-center justify-center border-4 w-56 md:w-80 p-4 rotate-12"
           >
             <Image
               className="-rotate-12"
