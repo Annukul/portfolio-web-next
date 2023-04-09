@@ -29,7 +29,7 @@ export const MainSection = () => {
       {/* CLOSEABLE NAV */}
       <div
         style={{ backgroundColor: "#0A1930" }}
-        className={`${!isNavOpen && "-right-96"} md:hidden h-full w-3/5 absolute right-0 transition-all duration-200 ease-in-out`}
+        className={`${isNavOpen ? "right-0" : "-right-96"} md:hidden h-full w-3/5 absolute transition-all duration-200 ease-in-out`}
       >
         <div className="w-full h-16 flex justify-end px-4 py-4">
           <button onClick={() => setIsNavOpen(false)} className="outline-none">
