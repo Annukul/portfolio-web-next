@@ -102,8 +102,8 @@ export const MainSection = () => {
           </a>
         </div>
       </nav>
-      <div className="flex w-full h-full">
-        <div className="flex px-4 md:p-0 w-full md:w-5/6 items-center justify-center">
+      <div className="flex w-full h-full py-16 md:p-0">
+        <div className="flex px-4 md:p-0 w-full md:w-5/6 items-start md:items-center justify-center">
           <div className="flex flex-col justify-center p-0 md:pr-8 md:pl-32 text-left">
             <div className="mb-4">
               <p className="text-4xl md:text-6xl font-medium text-white tracking-wide">
